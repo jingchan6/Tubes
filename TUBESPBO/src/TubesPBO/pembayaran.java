@@ -114,6 +114,9 @@ public class pembayaran extends javax.swing.JFrame {
            c = rs.getString("nim");
            if (a.equals(c)){
                System.out.println("berhasil");
+               pembayaranlanjut lanjut = new pembayaranlanjut();
+               lanjut.setVisible(true);
+               this.dispose();
                break;
            }
            else {

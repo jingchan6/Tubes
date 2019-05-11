@@ -4,6 +4,11 @@
  * and open the template in the editor.
  */
 package TubesPBO;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import javax.swing.Timer;
 /**
  * @author DZGIGABYTE
  */
@@ -20,6 +25,9 @@ public class menuhome extends javax.swing.JFrame {
     public void setUsername(String username){
         this.username=username;
         namaadmin.setText(username);
+        Date d = new Date();
+       SimpleDateFormat s = new SimpleDateFormat("dd-MM-yyyy");
+       tanggalloginadmin.setText(s.format(d));
     }
     /**
      * This method is called from within the constructor to initialize the form.
@@ -135,7 +143,7 @@ public class menuhome extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel2MouseClicked
 
     private void tanggalloginadminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tanggalloginadminActionPerformed
-        // TODO add your handling code here:
+      // TODO add your handling code here:
     }//GEN-LAST:event_tanggalloginadminActionPerformed
 
     private void namaadminActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_namaadminActionPerformed
